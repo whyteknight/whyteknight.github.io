@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0px;
+  font-family: ‘Merriweather’, Georgia, serif;
+  background-color: #946b42;
+}
+
+/* Navigation Bar */
+.navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid black;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-color: black;
+}
+
+/* About Us */
+.aboutus {
+  padding:50px;
+}
+
+.carousel-item {
+  height: 350px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+}
+
+/* Products */
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+/* Contact Us */
+
+.tarea {
+    resize: none;
+}
+
+.cform {
+    margin-top: -8px;
+    width:100%;
+    float: right;
+    font-size: 50px;
+    animation-name:cnt;
+    animation-duration: 5s;
+    color:#FFFFFF;
+    animation-direction: alternate;
+    
+}
+
+/* Hero Section */
+.hero1 {
+  background-image: linear-gradient(rgba(0,0,0, .10), rgba(0,0,0, .9)), url('images/pict1.jfif');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#hero .container {
+  height: 50vh;
+}
+.generic {
+  padding: 100px 0;
+}
+
+
+@keyframes cnt{
+        0%{ 
+            width:300px;
+              color: #FFFFFF;
+          }
+        50%{
+             color:#a39e9e;
+        }
+        70%{
+             color:#CCC;
+          }
+        100%{
+             color:#FFFFFF;
+          }
+        
+        }
+
+
+        /* Flip Card  */
+        .flip-card {
+          background-color: transparent;
+          width: 300px;
+          height: 300px;
+          perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+        
+        .flip-card-back {
+          background-color: #2980b9;
+          color: white;
+          transform: rotateY(180deg);
+        }
+
+
+
+
+ 
+
