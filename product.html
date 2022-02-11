@@ -1,223 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
 
-    <!-- Bootstrap Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-	
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <!-- Google Fonts -->
-	<link href=’http://fonts.googleapis.com/css?family=Merriweather&#8217;
-     rel=’stylesheet’ type=’text/css’>
-	
-	<link rel="stylesheet" href="css/styles.css">>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href=’http://fonts.googleapis.com/css?family=Merriweather&#8217; rel=’stylesheet’ type=’text/css’>
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <!-- Navigation Section -->
 <header>
-    <nav class="navbar fixed-top navbar-expand-sm" style="background-color: #345B63";>
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo1.jpg" height="60" alt="CoolBrand"></a>
-          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: gray;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="index.html"><i class="bi bi-house-fill">&nbsp;</i>Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="about.html"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="blog.html"><i class="bi bi-newspaper"></i>&nbsp;Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="product.html"><i class="bi bi-box-seam"></i>&nbsp;Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="contact.html"><i class="fa fa-handshake" aria-hidden="true"></i>&nbsp;Contact Us</a>
-              </li>
-            
-            </ul>
+  <nav class="navbar fixed-top navbar-expand-sm" style="background-color: #345B63" ;>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo1.png" height="30" alt="Bike-A-Muna"></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" style="background-color: gray;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="index.html"><i
+                class="bi bi-house-fill">&nbsp;</i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html"><i class="fa fa-users"
+                aria-hidden="true"></i>&nbsp;About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="blog.html"><i class="bi bi-newspaper"></i>&nbsp;Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="product.html"><i class="bi bi-box-seam"></i>&nbsp;Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html"><i class="fa fa-handshake"
+                aria-hidden="true"></i>&nbsp;Contact Us</a>
+          </li>
+        </ul>
+        <div class="row no-gutters">
+          <div class="col">
+            <input class="form-control border-secondary border-right-0 rounded" type="search" placeholder="search">
           </div>
-        </div>
-      </nav><br><br>
-</header>
-  <body>
-    <!-- Product Cards -->
-    <div class="container-fluid mt-5 p-2">
-      <h1 class="text-center font-weight-normal">Product Card with Modal</h1>
-    </div>
-
-    <div class="container mt-2 d-flex mb-5">
-      <div class="row">
-        <div class="col-md-4 mt-5">
-          <div class="card">
-            <img src="images/prod1.jpg" class="card-img-top w-100" />
-            <div class="card-body">
-              <h2 class="card-title">TREK</h2>
-              <div class="d-flex justify-content-between">
-                <p class="card-text">Mountain Bike</p>
-                <p class="card-text mr-4 text-success">₱80,000.00</p>
-              </div>
-              <a
-                href="#"
-                class="card-link"
-                data-bs-toggle="modal"
-                data-bs-target="#modal1"
-                >More</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-5">
-          <div class="card">
-            <img src="images/prod2.jfif" class="card-img-top w-100" />
-            <div class="card-body">
-              <h2 class="card-title">FLAIR</h2>
-              <div class="d-flex justify-content-between">
-                <p class="card-text">
-                  Bike Helmet
-                </p>
-                <p class="card-text mr-4 text-success">₱1,000.00</p>
-              </div>
-              <a
-                href="#"
-                class="card-link"
-                data-bs-toggle="modal"
-                data-bs-target="#modal2"
-                >More</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-5">
-          <div class="card">
-            <img src="images/prod3.jpg " class="card-img-top w-100" />
-            <div class="card-body">
-              <h2 class="card-title">MONGOOSE</h2>
-              <div class="d-flex justify-content-between">
-                <p class="card-text">
-                  Fat Bike
-                </p>
-                <p class="card-text mr-4 text-success">₱30,000.00</p>
-              </div>
-              <a
-                href="#"
-                class="card-link"
-                data-bs-toggle="modal"
-                data-bs-target="#modal3"
-                >More</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-5">
-          <div class="card">
-            <img src="images/prod4.jpg" class="card-img-top w-100" />
-            <div class="card-body">
-              <h2 class="card-title">AMS MERICA</h2>
-              <div class="d-flex justify-content-between">
-                <p class="card-text">
-                  Bike Jersey
-                </p>
-                <p class="card-text mr-4 text-success">₱3,200.00</p>
-              </div>
-              <a
-                href="#"
-                class="card-link"
-                data-bs-toggle="modal"
-                data-bs-target="#modal4"
-                >More</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-5">
-          <div class="card">
-            <img src="images/prod5.png" class="card-img-top w-100" />
-            <div class="card-body">
-              <h2 class="card-title">GT</h2>
-              <div class="d-flex justify-content-between">
-                <p class="card-text">
-                  Bike for Kids
-                </p>
-                <p class="card-text mr-4 text-success">₱9,000.00</p>
-              </div>
-              <a
-                href="#"
-                class="card-link"
-                data-bs-toggle="modal"
-                data-bs-target="#modal5"
-                >More</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-5">
-          <div class="card">
-            <img src="images/prod6.jfif" class="card-img-top w-100" />
-            <div class="card-body">
-              <h2 class="card-title">Water Bottle</h2>
-              <div class="d-flex justify-content-between">
-                <p class="card-text">Perfect for any athlete on the go for Biking</p>
-                <p class="card-text mr-4 text-success">₱800.00</p>
-              </div>
-              <a
-                href="#"
-                class="card-link"
-                data-bs-toggle="modal"
-                data-bs-target="#modal6"
-                >More</a
-              >
-            </div>
+          <div class="col-auto">
+            <button class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right" type="button">
+              <i class="fa fa-search"></i>
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </nav><br><br>
+</header>
 
-    <!-- Modal Section -->
-    <div class="container-fluid">
+<body>
+  <!-- Product Cards -->
+  <div class="container-fluid mt-5 p-2">
+    <h1 class="text-center font-weight-normal">Our Latest Products</h1>
+  </div>
+
+  <div class="container mt-2 d-flex mb-5">
+    <div class="row">
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="images/prod1.jpg" class="card-img-top w-100" />
+          <div class="card-body">
+            <h2 class="card-title">TREK X-CALIBER 9</h2>
+            <div class="d-flex justify-content-between">
+              <p class="card-text">Mountain Bike</p>
+              <p class="card-text mr-4 text-success">₱80,000.00</p>
+            </div>
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modal1">More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="images/prod2.jfif" class="card-img-top w-100" />
+          <div class="card-body">
+            <h2 class="card-title">FLAIR</h2>
+            <div class="d-flex justify-content-between">
+              <p class="card-text">
+                Bike Helmet
+              </p>
+              <p class="card-text mr-4 text-success">₱1,000.00</p>
+            </div>
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modal2">More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="images/prod3.jpg " class="card-img-top w-100" />
+          <div class="card-body">
+            <h2 class="card-title">MONGOOSE ARGUS</h2>
+            <div class="d-flex justify-content-between">
+              <p class="card-text">
+                Fat Bike
+              </p>
+              <p class="card-text mr-4 text-success">₱30,000.00</p>
+            </div>
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modal3">More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="images/prod4.jpg" class="card-img-top w-100" />
+          <div class="card-body">
+            <h2 class="card-title">AMS MERICA</h2>
+            <div class="d-flex justify-content-between">
+              <p class="card-text">
+                Bike Jersey
+              </p>
+              <p class="card-text mr-4 text-success">₱3,200.00</p>
+            </div>
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modal4">More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="images/prod5.png" class="card-img-top w-100" />
+          <div class="card-body">
+            <h2 class="card-title">GT GRUNGE</h2>
+            <div class="d-flex justify-content-between">
+              <p class="card-text">
+                Bike for Kids
+              </p>
+              <p class="card-text mr-4 text-success">₱9,000.00</p>
+            </div>
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modal5">More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-5">
+        <div class="card">
+          <img src="images/prod6.jfif" class="card-img-top w-100" />
+          <div class="card-body">
+            <h2 class="card-title">705</h2>
+            <div class="d-flex justify-content-between">
+              <p class="card-text">Water Bottle</p>
+              <p class="card-text mr-4 text-success">₱800.00</p>
+            </div>
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modal6">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Section -->
+  <div class="container-fluid">
     <div class="modal fade" id="modal1" tabindex="-1">
       <div class="modal-dialog modal-lg bg-success">
         <div class="modal-content">
           <div class="modal-header pb-2">
             <h1 class="font-weight-light ml-4">Description</h1>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-              aria-label="close"
-            >
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="row mt-2 p-3">
               <div class="col-md-6">
-                <img
-                  src="images/prod1.jpg"
-                  class="img-fluid rounded"
-                />
+                <img src="images/prod1.jpg" class="img-fluid rounded" />
               </div>
               <div class="col-md-6">
-                <h2 class="product_name">TREK</h2>
+                <h2 class="product_name">TREK X-CALIBER 9</h2>
                 <p class="product_desc">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur velit aut reiciendis sint mollitia saepe, doloremque corporis natus laborum iste aperiam enim laudantium blanditiis, labore accusantium libero commodi! Corporis, ex!
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur velit aut reiciendis sint
+                  mollitia saepe, doloremque corporis natus laborum iste aperiam enim laudantium blanditiis, labore
+                  accusantium libero commodi! Corporis, ex!
                 </p>
                 <p>
                   Review : &nbsp;&nbsp;&nbsp;
@@ -244,27 +218,21 @@
         <div class="modal-content">
           <div class="modal-header pb-2">
             <h1 class="font-weight-light ml-4">Description</h1>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-              aria-label="close"
-            >
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="row mt-2 p-3">
               <div class="col-md-6">
-                <img
-                  src="images/prod2.jfif"
-                  class="img-fluid rounded"
-                />
+                <img src="images/prod2.jfif" class="img-fluid rounded" />
               </div>
               <div class="col-md-6">
                 <h2 class="product_name">FLAIR</h2>
                 <p class="product_desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde sint sunt corrupti error eveniet?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus
+                  reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde
+                  sint sunt corrupti error eveniet?
                 </p>
                 <p>
                   Review : &nbsp;&nbsp;&nbsp;
@@ -291,34 +259,28 @@
         <div class="modal-content">
           <div class="modal-header pb-2">
             <h1 class="font-weight-light ml-4">Description</h1>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-              aria-label="close"
-            >
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="row mt-2 p-3">
               <div class="col-md-6">
-                <img
-                  src="images/prod3.jpg"
-                  class="img-fluid rounded"
-                />
+                <img src="images/prod3.jpg" class="img-fluid rounded" />
               </div>
               <div class="col-md-6">
-                <h2 class="product_name">MONGOOSE</h2>
+                <h2 class="product_name">MONGOOSE ARGUS</h2>
                 <p class="product_desc">
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere accusamus asperiores, officiis dolor aspernatur autem a modi et. Id doloribus earum repellendus nisi at laborum praesentium voluptas voluptatem dolorum!
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam facere accusamus asperiores,
+                  officiis dolor aspernatur autem a modi et. Id doloribus earum repellendus nisi at laborum praesentium
+                  voluptas voluptatem dolorum!
                 </p>
                 <p>
                   Review : &nbsp;&nbsp;&nbsp;
                   <i class="fa fa-star text-warning ml-2"></i>
                   <i class="fa fa-star text-warning ml-2"></i>
                   <i class="fa fa-star text-warning ml-2"></i>
-                  <i class="fa fa-star text-warning ml-2"></i>
+                  <i class="fa fa-star ml-2"></i>
                   <i class="fa fa-star ml-2"></i>
                 </p>
 
@@ -332,33 +294,27 @@
         </div>
       </div>
     </div>
-  
+
     <div class="modal fade" id="modal4" tabindex="-1">
       <div class="modal-dialog modal-lg bg-success">
         <div class="modal-content">
           <div class="modal-header pb-2">
             <h1 class="font-weight-light ml-4">Description</h1>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-              aria-label="close"
-            >
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="row mt-2 p-3">
               <div class="col-md-6">
-                <img
-                  src="images/prod4.jpg"
-                  class="img-fluid rounded"
-                />
+                <img src="images/prod4.jpg" class="img-fluid rounded" />
               </div>
               <div class="col-md-6">
                 <h2 class="product_name">AMS MERICA</h2>
                 <p class="product_desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde sint sunt corrupti error eveniet?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus
+                  reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde
+                  sint sunt corrupti error eveniet?
                 </p>
                 <p>
                   Review : &nbsp;&nbsp;&nbsp;
@@ -385,27 +341,21 @@
         <div class="modal-content">
           <div class="modal-header pb-2">
             <h1 class="font-weight-light ml-4">Description</h1>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-              aria-label="close"
-            >
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="row mt-2 p-3">
               <div class="col-md-6">
-                <img
-                  src="images/prod5.png"
-                  class="img-fluid rounded"
-                />
+                <img src="images/prod5.png" class="img-fluid rounded" />
               </div>
               <div class="col-md-6">
-                <h2 class="product_name">GT</h2>
+                <h2 class="product_name">GT GRUNGE</h2>
                 <p class="product_desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde sint sunt corrupti error eveniet?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus
+                  reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde
+                  sint sunt corrupti error eveniet?
                 </p>
                 <p>
                   Review : &nbsp;&nbsp;&nbsp;
@@ -432,27 +382,21 @@
         <div class="modal-content">
           <div class="modal-header pb-2">
             <h1 class="font-weight-light ml-4">Description</h1>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-              aria-label="close"
-            >
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <div class="row mt-2 p-3">
               <div class="col-md-6">
-                <img
-                  src="images/prod6.jfif"
-                  class="img-fluid rounded"
-                />
+                <img src="images/prod6.jfif" class="img-fluid rounded" />
               </div>
               <div class="col-md-6">
-                <h2 class="product_name">Water Bottle</h2>
+                <h2 class="product_name">705</h2>
                 <p class="product_desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde sint sunt corrupti error eveniet?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ipsam sunt ea, culpa doloribus
+                  reprehenderit veniam necessitatibus, quo architecto id accusantium eaque similique! Doloribus unde
+                  sint sunt corrupti error eveniet?
                 </p>
                 <p>
                   Review : &nbsp;&nbsp;&nbsp;
@@ -473,90 +417,106 @@
         </div>
       </div>
     </div>
-  
-  
-  
   </div>
 
   <!-- Footer Section -->
-	<footer class="text-white pt-5 pb-4 sticky-bottom" style="background-color:#345B63">
+  <footer class="text-white pt-5 pb-4 sticky-bottom" style="background-color:#345B63">
 
-		<div class="container text-center text-md-left">
-	
-			<div class="row text-center text-md-left">
-	
-				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Bike-A-Muna</h5>
-					<p>Lorem Lorem Lorem ipsum dolor sit amet,
-			  ital consectetur lorem ipsum dolor sit amet adipisicing elit.</p>
-					
-				</div>
-	
-				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
-				<p>
-					<a href="#" class="text-white" style="text-decoration: none;">Bike</a>
-				</p>
-				<p>
-					<a href="#" class="text-white" style="text-decoration: none;">Accessories</a>
-				</p>
-				<p>
-					<a href="#" class="text-white" style="text-decoration: none;">Clothing</a>
-				</p>
-	
-				</div>
-	
-				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
-				<p>
-					<a href="#" class="text-white" style="text-decoration: none;"> Your Account</a>
-				</p>
-				<p>
-					
-				<p>
-					<a href="#" class="text-white" style="text-decoration: none;"> Help</a>
-				</p>
-				</div>
-	
-				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-					<h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
-					<p>
-						<i class="fas fa-home mr-3"></i>&nbsp;&nbsp; Philippines
-					</p>
-					<p>
-						<i class="fas fa-envelope mr-3"></i>&nbsp;&nbsp;sample@gmail.com
-					</p>
-					<p>
-						<i class="fas fa-phone mr-3"></i>&nbsp;&nbsp;+63 917 8012324
-					</p>
-				</div>
-				
-			</div>
-	
-			<hr class="mb-4">
-	
-			<div class="row justify-content-center">
-	
-				<div class="col-md-7 col-lg-8">
-					<p>	Copyright ©2021 All rights reserved by:
-						<a href="#" style="text-decoration: none;">
-							<strong>Bike-A-Muna</strong>
-						</a></p>
-					
-				</div>
-	
-				
-				
-			</div>
-	
-		</div>
-	</div>
+    <div class="container text-center text-md-left">
 
+      <div class="row text-center text-md-left">
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Bike-A-Muna</h5>
+          <p>Lorem Lorem Lorem ipsum dolor sit amet,
+            ital consectetur lorem ipsum dolor sit amet adipisicing elit.</p>
+
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Bike</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Accessories</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Clothing</a>
+          </p>
+
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Your Account</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Subscribe</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;"> Help</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+          <p>
+            <i class="fas fa-home mr-3"></i>&nbsp;&nbsp; Philippines
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i>&nbsp;&nbsp;sample@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>&nbsp;&nbsp;+63 917 8012324
+          </p>
+        </div>
+
+      </div>
+      <div class="social-media">
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                class="fab fa-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                class="fab fa-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                class="fab fa-google-plus"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="mb-4">
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-7 col-lg-8">
+          <p> Copyright ©2021 All rights reserved by:
+            <a href="#" style="text-decoration: none;">
+              <strong>Bike-A-Muna</strong>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JS with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,0 +1,100 @@
+$stylecolor1: #345B63;
+$stylecolor2: cyan;
+$stylecolor3: white;
+$stylecolor4: black;
+
+@mixin case() {
+    background-color: $stylecolor1;
+    color:$stylecolor2;
+    outline: none;
+    border: 1px solid $stylecolor4;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.container-cform {
+    box-sizing: border-box;
+    display: grid;
+    height:auto;
+    width: 100vw;
+    place-items: center;
+    text-transform:uppercase;
+    color: $stylecolor1;
+    margin-top: 100px;
+}
+
+.form1 {
+    width: 90vw;
+}
+
+form {
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(25rem, 1fr));
+        grid-gap: 2rem;
+    
+        .case {
+            @include case();
+            height: 4rem;
+            padding: 0 2rem;
+
+            &::placeholder {
+                font-size: 12px;
+                color: $stylecolor3;
+            }
+        }
+  
+    }    
+    
+        .msg-case {
+            @include case();
+            width: 100%;
+            resize: none;
+            height: 10rem;
+            padding: 1rem 3rem;
+            margin-top: 2rem;
+            
+            &::placeholder {
+            font-size: 16px;
+            color: $stylecolor3;
+            }
+        }   
+
+        input[type="submit"] {
+            @include case();
+            padding: 1rem 2rem;
+            margin: 2rem 0;
+            cursor: pointer;
+
+            &:hover {
+            background-color: $stylecolor4;
+            }
+
+        }  
+} 
+
+@media (max-width:993px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:768px) {
+    .container-cform {
+        .form1 {
+            form {
+                .info {
+                    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); 
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+

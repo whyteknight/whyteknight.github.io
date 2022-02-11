@@ -1,0 +1,95 @@
+.container-cform {
+  box-sizing: border-box;
+  display: grid;
+  height: auto;
+  width: 100vw;
+  place-items: center;
+  text-transform: uppercase;
+  color: #345B63;
+  margin-top: 100px;
+}
+
+.form1 {
+  width: 90vw;
+}
+
+form .info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+}
+form .info .case {
+  background-color: #345B63;
+  color: cyan;
+  outline: none;
+  border: 1px solid black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  height: 4rem;
+  padding: 0 2rem;
+}
+form .info .case::-moz-placeholder {
+  font-size: 12px;
+  color: white;
+}
+form .info .case:-ms-input-placeholder {
+  font-size: 12px;
+  color: white;
+}
+form .info .case::placeholder {
+  font-size: 12px;
+  color: white;
+}
+form .msg-case {
+  background-color: #345B63;
+  color: cyan;
+  outline: none;
+  border: 1px solid black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+  height: 10rem;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+}
+form .msg-case::-moz-placeholder {
+  font-size: 16px;
+  color: white;
+}
+form .msg-case:-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+}
+form .msg-case::placeholder {
+  font-size: 16px;
+  color: white;
+}
+form input[type=submit] {
+  background-color: #345B63;
+  color: cyan;
+  outline: none;
+  border: 1px solid black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+form input[type=submit]:hover {
+  background-color: black;
+}
+
+@media (max-width: 993px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .container-cform .form1 form .info {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
